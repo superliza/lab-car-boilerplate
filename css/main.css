@@ -1,1 +1,185 @@
 /* Los estilos de tu proyecto */
+* {
+  box-sizing: border-box;
+}
+
+nav.navbar {
+  background-color: white;
+  min-height: 13vh;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+div.container {
+  margin-top: 2vh;
+}
+
+.content-center {
+  margin-top: 1vh;
+}
+
+.title {
+  color: white;
+}
+
+div.iphone-text {
+  padding-top: 5vh;
+  color: white;
+  /*border-top: 0.2vh solid white;
+  border-right: 0.2vh solid white;
+  border-bottom: 0.2vh solid white;*/
+}
+
+section.image-background {
+  background-image: url("../assets/images/taxi.jpg");
+  height: 90vh;
+  background-size: cover;
+  background-position: 100% 95.2%;
+}
+
+section.picture {
+  margin-top: 10vh;
+}
+
+div.col-text {
+  height: 60vh;
+  background-color: #F7B617;
+}
+
+div.col-text-opacity {
+  height: 75vh;
+  background-color: rgb(14, 17, 16);
+  opacity:0.6
+}
+
+.text-conductor {
+  color: white;
+}
+
+section.contain-text {
+  /*background-color: black;*/
+  height: 50vh;
+  margin-top: 5vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+
+section.background-yellow {
+  background-color: #F7B617;
+  height: 65vh;
+}
+
+div.col-md-5 {
+  margin-top: 3vh;
+  /*background-color: pink;*/
+}
+
+img.iphone-6 {
+  height: 45vh;
+}
+
+p.labcar-p {
+  margin-right: 15vh;
+}
+
+/*div.col-md-10 {
+  background-color: black;
+  height: 20vh;
+}*/
+
+section.conductor-background {
+  background-image: url("../assets/images/conduce.jpg");
+  height: 75vh;
+  background-size: cover;
+  background-position: 100%;
+}
+
+section.contain-text-opacity {
+  /*background-color: black;*/
+  height: 30vh;
+  margin-top: 20vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+
+div.tariff {
+  /*background-color: red;*/
+  height: 60vh;
+}
+
+section.row-tariff {
+  margin-top: 10vh;
+  /*background-color: black;*/
+  height: 45vh;
+  margin-left: 15vh;
+}
+
+div.col-md-1, div.col-md-7, div.col-xs-2, div.col-xs-8 {
+  margin-top: 3vh;
+}
+
+.form-control {
+  background-color: #F7B617;
+  color: white;
+}
+
+div.button-ruta {
+  margin-top: 5vh;
+}
+
+section.row-map {
+  /*background-color: black;*/
+  height: 50vh;
+  margin-top: 10vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
+
+#map {
+  margin-top: 2vh;
+  margin-left: 8vh;
+}
+
+.my-map {
+  border: 0.5vh solid white;
+}
+
+footer {
+  background-color: #2B2B2B;
+}
+
+.row-footer {
+  margin-top: 5vh;
+  margin-left: 10vh;
+  margin-left: 10vh;
+}
+
+.col-11-footer {
+  border-bottom: 0.2vh solid white;
+}
+
+ i, .col-p-text {
+  color: white;
+  margin-top: 5vh;
+}
+
+i.icon {
+  margin-top: 33vh;
+}
+
+.google-play-app-store {
+  margin-top: 20vh;
+}
+
+.lorem {
+  border-top: 0.2vh solid white;
+}
+
+iframe#map-xs {
+  width: 100%;
+}
+
+img.app-store, img.google-play {
+  width: 100%;
+  margin-top: 2vh;
+}
