@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Lab < ar </title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.css">
+    <title> Lab < ar </title>
   </head>
   <body>
     <nav class="navbar navbar-default">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -31,11 +31,50 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#"> Viaja </a></li>
             <li><a href="#"> Conduce </a></li>
-            <li><a href="#">Iniciar sesión </a></li>
+            <li><a href="#modal1" class="btn btn-default" data-toggle="modal"> Iniciar sesión </a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
+
+    <!-- modal de iniciar sesión -->
+    <div class="modal fade" id="modal1">
+      <div class="modal-dialog">
+        <div class="modal-content modal-log-in">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <img class="modal-user center-block" src="assets/images/usuario.png" alt="user">
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <form class="col-md-8 col-md-offset-2 modal-col">
+                <div class="form-group row">
+                  <div class="col-md-10 col-md-offset-1">
+                    <input type="text" class="form-control modal-username" placeholder="Username">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-10 col-md-offset-1">    
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-offset-4 col-sm-8">
+                    <button type="button" class="btn btn-default button-modal"> Iniciar sesión </button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-10 col-md-offset-1">
+                    <p> ¿Olvidaste tu contraseña? <a href="#"> Click aquí </a></p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   	<section class="container-fluid image-background">
       <section class="row picture">
         <div class="col-md-4 pull-right col-text">
@@ -52,7 +91,7 @@
               <section class="row">
                 <div class="col-md-12">
                   <button type="button" class="btn btn-default btn-lg visible-xs"> Descarga la app </button>
-                  <button type="button" class="btn btn-default hidden-xs"> Regístrate </button>
+                  <button type="button" class="btn btn-default hidden-xs" data-toggle="modal" data-target="#modal2"> Regístrate </button>
                 </div>
               </section>
               <section class="row">
@@ -68,7 +107,7 @@
               </section>
               <section class="row">
                 <div class="col-md-12">
-                  <button type="button" class="btn btn-default content-center hidden-xs"> Conviértete en conductor </button>
+                  <button type="button" class="btn btn-default content-center hidden-xs" data-toggle="modal" data-target="#modal3"> Conviértete en conductor </button>
                 </div>
               </section>
             </div>
@@ -76,6 +115,128 @@
         </div>
       </section>
     </section>
+
+    <!-- modal de registro #modal2 -->
+    <div class="modal fade" id="modal2">
+      <div class="modal-dialog">
+        <div class="modal-content modal-sign-up">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-12">
+                <button type="button" class="btn btn-primary btn-lg btn-block"> ¿Ya tienes una cuenta? </button>
+              </div>
+            </div>
+            <form class="row">
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="Nombre">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="Apellido">
+              </div>
+            </form>
+            <form class="row">
+              <div class="col-md-12">
+                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="email">
+              </div>
+            </form>
+            <form class="row">
+              <div class="col-md-12">
+                <input type="tel" class="form-control" placeholder="Teléfono">
+              </div>
+            </form>
+            <form class="row">
+              <div class="col-md-12">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Contraseña">
+              </div>
+            </form>
+            <form class="row">
+              <div class="col-md-12">
+                <input type="text" class="form-control" placeholder="Ciudad">
+              </div>
+            </form>
+            <form class="row">
+              <div class="col-md-12">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="(Opcional) código de invitación">
+              </div>
+            </form>
+            <form class="row">
+              <div class="col-md-12">
+                <select class="form-control">
+                  <option> ¿Cómo te enteraste de nosotros? </option>
+                  <option> Por un conocido </option>
+                  <option> Redes sociales </option>
+                  <option> Televisión </option>
+                  <option> Folletos </option>
+                </select>
+              </div>
+            </form>
+            <button type="button" class="btn btn-primary btn-block"> Enviar </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal para convertirse en conductor -->
+    <div class="modal fade" id="modal3">
+      <div class="modal-dialog">
+        <div class="modal-content modal-car">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <form class="row">
+              <div class="col-md-12">
+                <label> ¿Tienes vehículo de 4 puertas? </label>
+                <select class="form-control">
+                  <option> Sí </option>
+                  <option> No </option>  
+                </select>
+              </div>
+            </form>
+            <form class="row">
+              <div class="col-md-12">
+                <label> Marca </label>
+                <select class="form-control">
+                  <option> Elige marca del vehículo </option>
+                  <option> Honda </option>  
+                </select>
+                <p> ¿No ves tu marca en la lista? Envía un correo a <a href="#"> serviciosmdv@uber.com </a></p>
+              </div>
+            </form>
+            <form class="row">
+              <div class="col-md-12">
+                <label> Modelo </label>
+                <select class="form-control">
+                  <option> modelo1 </option>
+                  <option> modelo2 </option>  
+                </select>
+              </div>
+            </form>
+            <form class="row">
+              <div class="col-md-12">
+                <label> Año </label>
+                <select class="form-control">
+                  <option> 2017 </option>
+                  <option> 2018 </option>  
+                </select>
+              </div>
+            </form>
+            <form class="row">
+              <div class="col-md-12">
+                <label> Número de marícula </label>
+                <input type="text" class="form-control" placeholder="Matrícula">
+                <p> La información de la matrícula ayuda a los clientes a identificar tu vehículo. </p>
+              </div>
+            </form>
+            <button type="button" class="btn btn-primary btn-lg btn-block"> Enviar </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section class="container-fluid background-yellow">
       <section class="row iphone">
         <div class="col-md-10 iphone-text">
@@ -151,7 +312,7 @@
                   <img src="assets/images/shape.png" alt="shape">
                 </div>
                 <div class="col-md-7">
-                  <input class="form-control" type="text" placeholder="Ingrese su punto de partida">
+                  <input class="form-control ruta" type="text" placeholder="Ingrese su punto de partida">
                 </div>
               </section>
               <section class="row">
@@ -159,7 +320,7 @@
                   <img src="assets/images/shape2.png" alt="shape">
                 </div>
                 <div class="col-md-7">
-                  <input class="form-control" type="text" placeholder="Ingrese su destino">
+                  <input class="form-control ruta" type="text" placeholder="Ingrese su destino">
                 </div>
               </section>
               <div class="col-md-9 button-ruta text-center">
@@ -271,6 +432,8 @@
         </section>
       </section>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>

@@ -10,6 +10,10 @@ nav.navbar {
   margin-bottom: 0;
 }
 
+button.navbar-toggle {
+  margin-left: 10vh;
+}
+
 div.container {
   margin-top: 2vh;
 }
@@ -48,8 +52,7 @@ div.col-text {
 
 div.col-text-opacity {
   height: 75vh;
-  background-color: rgb(14, 17, 16);
-  opacity:0.6
+  background-color: rgba(0,0,0,0.57);
 }
 
 .text-conductor {
@@ -67,6 +70,10 @@ section.contain-text {
 section.background-yellow {
   background-color: #F7B617;
   height: 65vh;
+}
+
+div.col-md-7 > input::placeholder {
+  color: white;
 }
 
 div.col-md-5 {
@@ -118,7 +125,7 @@ div.col-md-1, div.col-md-7, div.col-xs-2, div.col-xs-8 {
   margin-top: 3vh;
 }
 
-.form-control {
+.ruta {
   background-color: #F7B617;
   color: white;
 }
@@ -182,4 +189,29 @@ iframe#map-xs {
 img.app-store, img.google-play {
   width: 100%;
   margin-top: 2vh;
+}
+
+.modal-log-in {
+  background-color: #08AC9D;
+}
+
+.modal-user {
+  height: 40vh;
+  
+}
+
+.modal-col {
+  background-color:#F5F5F5;
+}
+
+.modal-username {
+  margin-top: 5vh;
+}
+
+.button-modal {
+  background-color: #F7B617;
+}
+
+.modal-car, .modal-sign-up {
+  background-color: #A9A9A9;
 }
